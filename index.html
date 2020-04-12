@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <script src="script/slider.js"></script>
+    
     <title>Movie Seat Booking</title>
   </head>
   <body>
     <div class="movie-container">
+      <script src="script/dropdown.js"></script>
       <label>Pick a movie:</label>
       <select id="movie">
         <option value="10">Avengers: Endgame ($10)</option>
@@ -105,6 +110,64 @@
       >
     </p>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
+  
+    <!-- Slider-->
+    <div class="slider">
+      <div class="item" id="slide showing">
+          <img src="img/avergers.jpg" alt="avergers">
+          <div class="slideText" ><a style="text-align:center;color:white;" href="">Avengers: Endgame</a></div>
+      </div>
+   
+      <div class="item">
+          <img src="img/joker.jpeg" alt="joker">
+          <div class="slideText" href=""><a style="text-align:center;color:white;" href="">Joker</a></div>
+      </div>
+   
+      <div class="item">
+          <img src="img/toystory.jpeg" alt="toystory">
+          <div class="slideText" href=""><a style="text-align:center;color:white;" href="">Toy Story 4</a></div>
+      </div>
+   
+    <div class="item">
+          <img src="img/lion.jpg" alt="thelionking">
+          <div class="slideText" href=""><a style="text-align:center;color:white;" href="">The Lion King</a></div>
+      </div>
+   
+   
+      <a class="prev" onclick="minusSlide()">&#10094;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a>
+  </div>
+   
+  <div class="slider-dots">
+      <span class="slider-dots_item"  onclick="currentxSlide(1)"></span> 
+      <span class="slider-dots_item" onclick="currentxSlide(2)"></span> 
+      <span class="slider-dots_item" onclick="currentxSlide(3)"></span> 
+    <span class="slider-dots_item" onclick="currentxSlide(4)"></span> 
+  </div>
+<!-- Timer -->
+    <div id="footer">
+      <h3 class="countdown-title">Price Reduced</h3>
+      <div id="countdown" class="countdown">
+        <div class="countdown-number">
+          <span class="days countdown-time"></span>
+          <span class="countdown-text">Days</span>
+        </div>
+        <div class="countdown-number">
+          <span class="hours countdown-time"></span>
+          <span class="countdown-text">Hours</span>
+        </div>
+        <div class="countdown-number">
+          <span class="minutes countdown-time"></span>
+          <span class="countdown-text">Minutes</span>
+        </div>
+        <div class="countdown-number">
+          <span class="seconds countdown-time"></span>
+          <span class="countdown-text">Seconds</span>
+        </div>
+      </div>
+    </div>
+    <script src="script/script_timer.js"></script>
   </body>
+  <footer></footer>
 </html>
