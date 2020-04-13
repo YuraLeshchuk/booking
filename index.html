@@ -15,11 +15,29 @@
     <div class="movie-container">
       <script src="script/dropdown.js"></script>
       <label>Pick a movie:</label>
+      <ul class="filterSection">
+        <li>
+            <input checked="true" type="checkbox" value="marvel"/>
+            <label>Marvel</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="dc"/>
+            <label>DC</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="pixar"/>
+            <label>Pixar</label>
+        </li>
+        <li>
+          <input checked="true" type="checkbox" value="disney"/>
+          <label>Disney</label>
+      </li>
+    </ul>
       <select id="movie">
-        <option value="10">Avengers: Endgame ($10)</option>
-        <option value="12">Joker ($12)</option>
-        <option value="8">Toy Story 4 ($8)</option>
-        <option value="9">The Lion King ($9)</option>
+        <option id="marvel" value="10">Avengers: Endgame ($10)</option>
+        <option id="dcstudio" value="12">Joker ($12)</option>
+        <option id="pixar" value="8">Toy Story 4 ($8)</option>
+        <option id="disney" value="9">The Lion King ($9)</option>
       </select>
     </div>
 

@@ -68,3 +68,12 @@ container.addEventListener("click", (e) => {
 
 // Initial count and total set
 updateSelectedCount();
+
+
+var checkBoxes = document.querySelectorAll(".filterSection li input");
+for (var i = 0; i < checkBoxes.length; i++) {
+  checkBoxes[i].addEventListener("click", filterItems, false);
+  checkBoxes[i].checked = true;
+}
+
+
