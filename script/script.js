@@ -74,6 +74,6 @@ var checkBoxes = document.querySelectorAll(".filterSection li input");
 for (var i = 0; i < checkBoxes.length; i++) {
   checkBoxes[i].addEventListener("click", filterItems, false);
   checkBoxes[i].checked = true;
-}
+}// Filter in progress))
 
 
